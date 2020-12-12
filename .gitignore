@@ -1,0 +1,5 @@
+# Ansible retry
+*.retry
+
+# OSX custom attributes
+.DS_Store
