@@ -1,0 +1,34 @@
+# Ignore stratum in source selection.
+stratumweight 0
+
+# Record the rate at which the system clock gains/losses time.
+driftfile {{ chrony_homedir }}/drift
+
+# Allow the system clock to be stepped in the first three updates
+# if its offset is larger than 5 second.
+makestep 5.0 3
+
+# Deny NTP client access.
+deny all
+
+# Listen for commands only on localhost.
+bindcmdaddress 127.0.0.1
+bindcmdaddress ::1
+
+# Disable logging of client accesses.
+noclientlog
+
+# Send a message to syslog if a clock adjustment is larger than 0.5 seconds.
+logchange 0.5
+
+# Specify directory for log files.
+logdir /var/log/chrony
+
+# Enable kernel synchronization of the real-time clock (RTC).
+rtcsync
+
+# Remote servers for client association.
+{% for s in chrony_timeservers %}
+server {{ s }} iburst {% if loop.first %}prefer{% endif %}
+
+{% endfor %}
