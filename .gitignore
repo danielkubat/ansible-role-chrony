@@ -3,3 +3,6 @@
 
 # OSX custom attributes
 .DS_Store
+
+# Cache folder
+.cache
