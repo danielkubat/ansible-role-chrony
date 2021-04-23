@@ -1,7 +1,7 @@
 # ansible-role-chrony
 
-![Ansible Lint](https://github.com/danielkubat/ansible-role-chrony/workflows/Ansible%20Lint/badge.svg)
-![YAML Lint](https://github.com/danielkubat/ansible-role-chrony/workflows/YAML%20Lint/badge.svg)
+![Ansible Lint](https://github.com/danielkubat/ansible-role-chrony/actions/workflows/ansible-lint.yml/badge.svg)
+![YAML Lint](https://github.com/danielkubat/ansible-role-chrony/actions/workflows/yamllint.yml/badge.svg)
 
 Resources required to install Chrony on RHEL/CentOS/Fedora.
 
