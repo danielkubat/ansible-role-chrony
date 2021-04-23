@@ -17,10 +17,6 @@ chrony_homedir: /var/lib/chrony
 # service definition
 chrony_service_name: chronyd
 
-# service state
-chrony_service_state: started
-chrony_service_enabled: yes
-
 # default internet timeservers to use
 chrony_timeservers:
   - time.google.com
