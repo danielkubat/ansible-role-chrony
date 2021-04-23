@@ -1,6 +1,6 @@
 ---
 - name: Manage state of service - restart if changed
-  systemd:
+  ansible.bultin.systemd:
     name: "{{ chrony_service_name }}"
     state: restarted
   listen: "chrony service restart"
