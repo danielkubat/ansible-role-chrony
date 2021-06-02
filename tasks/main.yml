@@ -1,5 +1,5 @@
 ---
-- name: Install chrony packages
+- name: Install packages
   ansible.builtin.yum:
     name: "{{ chrony_packages }}"
     state: present
@@ -7,8 +7,8 @@
 - name: Fix permissions for chrony home directory
   ansible.builtin.file:
     path: "{{ chrony_homedir }}"
-    mode: 0750
     state: directory
+    mode: 0750
 
 - name: Deploy configuration
   ansible.builtin.template:
