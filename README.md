@@ -9,7 +9,7 @@ Resources required to install Chrony on RHEL/CentOS/Fedora.
 
 To start the process locally, install the role:
 
-```
+```bash
 ansible-galaxy install danielkubat.chrony
 ```
 
@@ -25,10 +25,8 @@ create a playbook and save as `playbook.yml`:
 
 and then execute it:
 
-```
+```bash
 ansible-playbook playbook.yml
 ```
 
 _Currently supported only on RHEL/CentOS/Fedora._
-
-[ansible]: https://docs.ansible.com/ansible/latest/index.html
