@@ -20,5 +20,6 @@ chrony_service_name: chronyd
 # default internet timeservers to use
 chrony_timeservers:
   - time.google.com
-  - pool.ntp.org
-  - tik.cesnet.cz
+  - time.cloudflare.com
+  - ntp.ripe.net
+  - ntp.nic.cz
