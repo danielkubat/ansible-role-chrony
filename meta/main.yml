@@ -17,3 +17,7 @@ galaxy_info:
         - all
   galaxy_tags:
     - chrony
+    - time
+    - date
+    - system
+    - ntp
