@@ -4,9 +4,9 @@ dependencies: []
 galaxy_info:
   role_name: chrony
   author: danielkubat
-  description: Chrony for RHEL/CentOS/Fedora.
-  license: "The Unlicense"
-  min_ansible_version: 2.10
+  description: Chrony for Linux
+  license: The Unlicense
+  min_ansible_version: 2.9
   platforms:
     - name: EL
       versions:
@@ -15,6 +15,14 @@ galaxy_info:
     - name: Fedora
       versions:
         - all
+    - name: Debian
+      versions:
+        - stretch
+        - buster
+    - name: Ubuntu
+      versions:
+        - bionic
+        - focal
   galaxy_tags:
     - chrony
     - time

@@ -1,6 +1,9 @@
 ---
+- name: Include variables
+  include_vars: "chrony_{{ ansible_facts['os_family'] | lower }}.yml"
+
 - name: Install packages
-  ansible.builtin.yum:
+  ansible.builtin.package:
     name: "{{ chrony_packages }}"
     state: present
 

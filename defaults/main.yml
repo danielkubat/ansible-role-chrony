@@ -8,9 +8,6 @@ chrony_mode: 0644
 chrony_packages:
   - chrony
 
-# configuration files
-chrony_config_file: /etc/chrony.conf
-
 # chrony user homedir
 chrony_homedir: /var/lib/chrony
 

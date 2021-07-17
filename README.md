@@ -3,7 +3,7 @@
 ![Ansible Lint](https://github.com/danielkubat/ansible-role-chrony/actions/workflows/ansible-lint.yml/badge.svg)
 ![YAML Lint](https://github.com/danielkubat/ansible-role-chrony/actions/workflows/yamllint.yml/badge.svg)
 
-Resources required to install Chrony on RHEL/CentOS/Fedora.
+Resources required to install and configure Chrony on RHEL/CentOS and Ubuntu/Debian linux distributions.
 
 ## Installation
 
@@ -28,5 +28,3 @@ and then execute it:
 ```bash
 ansible-playbook playbook.yml
 ```
-
-_Currently supported only on RHEL/CentOS/Fedora._
